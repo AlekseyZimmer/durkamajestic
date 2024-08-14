@@ -302,6 +302,11 @@
   
   .hero {
     padding-block-start: calc(73px + var(--section-padding));
+    background: url('../images/durka_bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   
   .hero-banner {
@@ -341,14 +346,7 @@
     align-items: center;
     gap: 5px;
   }
-  .hero-background * {
-    background: url('../images/durka.gif') no-repeat center center fixed;
-    opacity: 10%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+
   
   
   
