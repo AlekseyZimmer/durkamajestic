@@ -293,7 +293,34 @@
   .navbar-link:is(:hover, :focus) { color: var(--winter-sky); }
   
   
+  .preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: url("../images/preload.jpg") no-repeat center center fixed;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+    visibility: visible;
+    opacity: 1;
+  }
+
   
+  .loaded_hiding .preloader {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in, visibility 0s ease-in 1s;
+  }
+  
+  .loaded .preloader {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in, visibility 0s ease-in 1s;
+  }
   
   
   /*-----------------------------------*\
