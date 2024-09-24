@@ -341,10 +341,10 @@ body {
   transition: all 0.2s;
 }
 .container>section {
-  margin: 6% 1% 1% 1%;
+  margin: 6% 1% 1% 10%;
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   flex-direction: row;
 }
 .container>section>article>h1 {
@@ -358,6 +358,7 @@ body {
 }
 #how-to-join {
   width: 50%;
+  margin-right: 7%;
   font-family: var(--ff-nanum);
   font-weight: 700;
   font-size: 80%;
